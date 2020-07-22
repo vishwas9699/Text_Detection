@@ -2,7 +2,7 @@ import cv2
 import pytesseract
  
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe'
-img = cv2.imread('Resources\Screenshot.png')
+img = cv2.imread('Resources\Test.png')
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
 #[   0          1           2           3           4          5         6       7       8        9        10       11 ]
