@@ -5,8 +5,6 @@ pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files (x86)\\Tesseract-OCR\
 img = cv2.imread('Resources\Test.png')
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
-#[   0          1           2           3           4          5         6       7       8        9        10       11 ]
-#['level', 'page_num', 'block_num', 'par_num', 'line_num', 'word_num', 'left', 'top', 'width', 'height', 'conf', 'text']
 boxes = pytesseract.image_to_data(img)
 for a,b in enumerate(boxes.splitlines()):
         print(b)
